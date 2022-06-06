@@ -12,6 +12,12 @@
 		ED0CCB68284E500A00D73560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0CCB66284E500A00D73560 /* Main.storyboard */; };
 		ED0CCB6A284E500B00D73560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0CCB69284E500B00D73560 /* Assets.xcassets */; };
 		ED0CCB6D284E500B00D73560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0CCB6B284E500B00D73560 /* LaunchScreen.storyboard */; };
+		ED0CCB77284E558500D73560 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB76284E558500D73560 /* Log.swift */; };
+		ED0CCB7C284E56AC00D73560 /* LogListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB7B284E56AC00D73560 /* LogListTableViewController.swift */; };
+		ED0CCB7E284E579800D73560 /* LogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB7D284E579800D73560 /* LogListViewModel.swift */; };
+		ED0CCB81284E59B300D73560 /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB80284E59B300D73560 /* LogDetailViewController.swift */; };
+		ED0CCB83284E5A9600D73560 /* LogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB82284E5A9600D73560 /* LogDetailViewModel.swift */; };
+		ED0CCB86284E5ED800D73560 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CCB85284E5ED800D73560 /* PersistentStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		ED0CCB69284E500B00D73560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED0CCB6C284E500B00D73560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED0CCB6E284E500B00D73560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED0CCB76284E558500D73560 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		ED0CCB7B284E56AC00D73560 /* LogListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListTableViewController.swift; sourceTree = "<group>"; };
+		ED0CCB7D284E579800D73560 /* LogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListViewModel.swift; sourceTree = "<group>"; };
+		ED0CCB80284E59B300D73560 /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
+		ED0CCB82284E5A9600D73560 /* LogDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewModel.swift; sourceTree = "<group>"; };
+		ED0CCB85284E5ED800D73560 /* PersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,9 @@
 		ED0CCB5F284E500A00D73560 /* Travel Diary - MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				ED0CCB84284E5EBC00D73560 /* Helper Files */,
+				ED0CCB79284E567300D73560 /* Views */,
+				ED0CCB78284E565100D73560 /* Model */,
 				ED0CCB75284E508A00D73560 /* Storyboards */,
 				ED0CCB74284E501500D73560 /* Resources */,
 			);
@@ -78,6 +93,49 @@
 				ED0CCB6B284E500B00D73560 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED0CCB78284E565100D73560 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED0CCB76284E558500D73560 /* Log.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED0CCB79284E567300D73560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED0CCB7F284E599600D73560 /* LogDetail */,
+				ED0CCB7A284E568300D73560 /* LogList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED0CCB7A284E568300D73560 /* LogList */ = {
+			isa = PBXGroup;
+			children = (
+				ED0CCB7B284E56AC00D73560 /* LogListTableViewController.swift */,
+				ED0CCB7D284E579800D73560 /* LogListViewModel.swift */,
+			);
+			path = LogList;
+			sourceTree = "<group>";
+		};
+		ED0CCB7F284E599600D73560 /* LogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ED0CCB80284E59B300D73560 /* LogDetailViewController.swift */,
+				ED0CCB82284E5A9600D73560 /* LogDetailViewModel.swift */,
+			);
+			path = LogDetail;
+			sourceTree = "<group>";
+		};
+		ED0CCB84284E5EBC00D73560 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED0CCB85284E5ED800D73560 /* PersistentStore.swift */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0CCB7C284E56AC00D73560 /* LogListTableViewController.swift in Sources */,
 				ED0CCB61284E500A00D73560 /* AppDelegate.swift in Sources */,
 				ED0CCB63284E500A00D73560 /* SceneDelegate.swift in Sources */,
+				ED0CCB77284E558500D73560 /* Log.swift in Sources */,
+				ED0CCB81284E59B300D73560 /* LogDetailViewController.swift in Sources */,
+				ED0CCB83284E5A9600D73560 /* LogDetailViewModel.swift in Sources */,
+				ED0CCB86284E5ED800D73560 /* PersistentStore.swift in Sources */,
+				ED0CCB7E284E579800D73560 /* LogListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
